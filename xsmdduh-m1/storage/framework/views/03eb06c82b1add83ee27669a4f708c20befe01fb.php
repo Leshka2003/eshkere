@@ -37,19 +37,19 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="surname " class="col-md-4 col-form-label text-md-end"><?php echo e(__('surname ')); ?></label>
+                            <label for="surname" class="col-md-4 col-form-label text-md-end"><?php echo e(__('surname ')); ?></label>
 
                             <div class="col-md-6">
-                                <input id="surname " type="text" class="form-control <?php $__errorArgs = ['surname'];
+                                <input id="surname" type="text" class="form-control <?php $__errorArgs = ['surname'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" name="surname " value="<?php echo e(old('surname ')); ?>" required autocomplete="surname " autofocus>
+unset($__errorArgs, $__bag); ?>" name="surname" value="<?php echo e(old('surname')); ?>" required autocomplete="surname" autofocus>
 
-                                <?php $__errorArgs = ['surname '];
+                                <?php $__errorArgs = ['surname'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -64,7 +64,7 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="	patronymic " class="col-md-4 col-form-label text-md-end"><?php echo e(__('patronymic')); ?></label>
+                            <label for="patronymic " class="col-md-4 col-form-label text-md-end"><?php echo e(__('patronymic')); ?></label>
 
                             <div class="col-md-6">
                                 <input id="patronymic" type="text" class="form-control <?php $__errorArgs = ['patronymic'];
@@ -91,7 +91,7 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="		login  " class="col-md-4 col-form-label text-md-end"><?php echo e(__('login')); ?></label>
+                            <label for="login  " class="col-md-4 col-form-label text-md-end"><?php echo e(__('login')); ?></label>
 
                             <div class="col-md-6">
                                 <input id="login" type="text" class="form-control <?php $__errorArgs = ['login'];
