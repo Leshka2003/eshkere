@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
     return view('where');
  });
 
- Route::get('/catalog', [tovarcontroller::class ]);
+ Route::get('/catalog', [tovarcontroller::class , 'show']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/studenty', [App\Http\Controllers\StudentController::class, 'student']);
+

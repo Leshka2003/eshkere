@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 
 class tovarcontroller extends Controller
 {
-    function show (){
+   public function show (){
+        $t=\App\Models\tovars::OrderBy('id','desc')->get();
+        return view ('catalog',['tovars'=>$t]);
+        
         
     }
 }
