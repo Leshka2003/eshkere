@@ -3,13 +3,14 @@
 <?php $__env->startSection('content'); ?>
     <?php $__currentLoopData = $tovars; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $o): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
     <div>
-        <?php echo e($o->name); ?>
-
-        <?php echo e($o->surname); ?>
-
+        <?php echo e($o->name); ?> <br>
+    <img src="<?php echo e($o->surname); ?>" alt="">     <br>
         <?php echo e($o->patranomic); ?>
 
     </div>
+    <?php if(auth()->guard()->check()): ?>
+    <button>купить</button>
+    <?php endif; ?>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     <?php $__env->stopSection(); ?>
 
