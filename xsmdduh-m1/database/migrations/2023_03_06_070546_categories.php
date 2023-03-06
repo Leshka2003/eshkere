@@ -13,17 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tovars', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('name');
-            $table->integer('price');
-            $table->string('img');
-            $table->string('country');
-            $table->string('model');
-            $table->string('category');
-            $table->string('count');
-            $table->integer('year');
+ 
         });
     }
 
@@ -34,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tovars');
+        //
     }
 };

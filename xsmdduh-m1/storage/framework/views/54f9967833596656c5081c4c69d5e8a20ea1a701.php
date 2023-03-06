@@ -42,7 +42,7 @@
                          <a href="<?php echo e(url('where')); ?>" class="nav-link">Где нас найти</a>
                         </li>
                         <li class="nav-item">
-                         <a href="<?php echo e(url('about')); ?>" class="nav-link">О нас</a>
+                         <a href="<?php echo e(url('/')); ?>" class="nav-link">О нас</a>
                         </li>
                     </ul>
 

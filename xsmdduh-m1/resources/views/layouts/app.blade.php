@@ -41,7 +41,7 @@
                          <a href="{{ url('where') }}" class="nav-link">Где нас найти</a>
                         </li>
                         <li class="nav-item">
-                         <a href="{{ url('about') }}" class="nav-link">О нас</a>
+                         <a href="{{ url('/') }}" class="nav-link">О нас</a>
                         </li>
                     </ul>
 
